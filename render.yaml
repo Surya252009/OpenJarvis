@@ -15,7 +15,7 @@ services:
     # Pin a cloud model as well as the engine. The repository's default model
     # is local-only, so omitting this would make `jarvis serve` reject the
     # otherwise healthy cloud engine during startup.
-    dockerCommand: serve --host 0.0.0.0 --port 10000 --engine cloud --model gpt-4o-mini
+    dockerCommand: serve --host 0.0.0.0 --port 10000 --engine cloud --model gemini-2.5-flash
     healthCheckPath: /health
     autoDeploy: true
     envVars:
