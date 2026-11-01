@@ -37,7 +37,7 @@ services:
       # are operator-supplied secrets; using one provider here keeps the
       # one-click contract deterministic instead of incorrectly requiring a
       # key for every supported cloud provider.
-      - key: OPENAI_API_KEY
+      - key: GOOGLE_API_KEY
         sync: false
 
       # The free service filesystem is ephemeral. OpenJarvis state under this
